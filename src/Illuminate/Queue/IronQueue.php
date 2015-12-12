@@ -147,9 +147,9 @@ class IronQueue extends Queue implements QueueContract
      * @param  string  $id
      * @return void
      */
-    public function deleteMessage($queue, $id)
+    public function deleteMessage($queue, $id, $reservation_id)
     {
-        $this->iron->deleteMessage($queue, $id);
+        $this->iron->deleteMessage($queue, $id,$reservation_id);
     }
 
     /**
